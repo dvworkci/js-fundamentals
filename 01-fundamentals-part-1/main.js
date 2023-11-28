@@ -133,6 +133,77 @@
 
 /***********    TYPE CONVERSION & COERCION    */
 
+// manual type conversion
+// const inputYear = '1997';
+// console.log(inputYear + 81);            // Output: 199781
+// console.log(Number(inputYear) + 81);    // Output: 2078
+// console.log(Number('Str'));     // Cannot convert string into number
+// console.log(String(23),23);      // 23 but in string
+//
+// // type coercion
+// console.log('I am ' + 26 + ' years old');
+// console.log(`I was born in ${inputYear}`);
+// console.log('23' - '10' - 3);   // 10 But with only subtraction, multiplication, division and modulo
+// console.log('23' + '10' + 3);   // Not possible with addition it will create string
+// console.log('2' * 2);
+// console.log('4' ** 3);
+// console.log('50' / 5);
+// console.log('49' % 2);      // Type coercion works in all these cases except addition
 /***********    TYPE CONVERSION & COERCION END    */
+
+/***********    TRUTHY AND FALSY VALUES    */
+// 5 falsy values : 0,'',undefined, null, NaN
+// console.log(Boolean(0));            // false
+// console.log(Boolean(undefined));    // false
+// console.log(Boolean(''));           // false
+// console.log(Boolean({}));           // true
+// console.log(Boolean('Dushyant'));   // true
+// console.log(Boolean(NaN));   // false
+//
+// // type coercion for truth & falsy values
+// let money = 0;
+// if(money){
+//     console.log(`Don't spend it all`);
+// } else {
+//     console.log(`You should get a job.`);
+// }
+/***********    TRUTHY AND FALSY VALUES END    */
+
+/***********    EQUALITY OPERATORS == VS ===    */
+
+// const age = 18;
+// if(age === 18) console.log(`You just became an adult :) (strict)`);
+// if(age == 18) console.log(`You just became an adult :) (loose)`);   // Avoid to use this one
+
+// const favNum = Number(prompt(`What's your favorite number?`));
+// if(isNaN(favNum)){
+//     console.log('Invalid number. Please enter number only!');
+// } else {
+//     if(favNum === 7){
+//         console.log(`${favNum} is a cool number`);
+//     } else {
+//         if(favNum !== 23){
+//             console.log(`Why not 23 ?`);
+//         }
+//         console.log(`${favNum} is not a cool number`);
+//     }
+// }
+
+// Program to print a table
+// const num = Number(prompt(`Enter a number: `));
+// printTable(num);
+//
+// function printTable(num){
+//     if(isNaN(num)){
+//         alert(`Please enter a valid number`);
+//     } else {
+//         for (let i = 1; i <= 10; i++){
+//             console.log(`${num} * ${i} = ${num * i}`);
+//         }
+//     }
+// }
+
+/***********    EQUALITY OPERATORS == VS === END    */
+
 
 
