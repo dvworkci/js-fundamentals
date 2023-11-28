@@ -205,5 +205,78 @@
 
 /***********    EQUALITY OPERATORS == VS === END    */
 
+/***********    LOGICAL OPERATORS    */
+
+// const hasDriversLicense = true;
+// const hasGoodVision = true;
+// const isTired = true;
+//
+// if(hasDriversLicense && hasGoodVision && !isTired){
+//     console.log(`You are able to drive!`);
+// } else {
+//     console.log(`Someone else should drive`);
+// }
+
+/***********    LOGICAL OPERATORS END    */
+
+/***********    CODING CHALLENGE 3    */
+
+// const scoreDolphins = (96 + 108 + 89) / 3;
+// const scoreKoalas = (88 + 91 + 110) / 3;
+//
+// if(scoreKoalas > scoreDolphins){
+//     console.log(`Koalas win the trophy`);
+// } else if(scoreDolphins > scoreKoalas){
+//     console.log(`Dolphins win the trophy`);
+// } else {
+//     console.log(`Both win the trophy`);
+// }
+
+/***********    CODING CHALLENGE 3 END    */
+
+/***********    SWITCH STATEMENT    */
+
+// const day = 'monday';
+//
+// switch (day) {
+//     case 'monday':
+//         console.log(`Plan course structure`);
+//         console.log(`Go to coding meetup`);
+//         break;
+//     case 'tuesday':
+//         console.log(`Prepare theory videos`);
+//         break;
+//     case 'wednesday':
+//     case 'thursday':
+//         console.log(`Write code examples.`);
+//         break;
+//     case 'friday':
+//         console.log(`Record videos`);
+//         break;
+//     case 'saturday':
+//     case 'sunday':
+//         console.log(`Enjoy the weekend`);
+//         break;
+//     default:
+//         console.log(`Invalid day`);
+// }
+
+/***********    SWITCH STATEMENT END    */
+
+/***********    TERNARY OPERATOR    */
+// const age = 26;
+// age >= 18 ? console.log(`I would like to drink beer.`) : console.log(`I would like to drink water.`);
+// console.log(`I like to drink ${age >= 18 ? 'Beer' : 'Juice'}`);
+// const drink = age >= 18 ? 'Beer' : 'Juice';
+/***********    TERNARY OPERATOR END    */
+
+/***********    CODING CHALLENGE 4    */
+const bill = 275;
+const tip = (bill >= 50 && bill <= 300) ? bill * 0.15 : bill * 0.2;
+const total = bill + tip;
+
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${total}`);
+/***********    CODING CHALLENGE 4 END    */
+
 
 
