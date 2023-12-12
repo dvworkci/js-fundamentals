@@ -277,6 +277,3 @@ const total = bill + tip;
 
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${total}`);
 /***********    CODING CHALLENGE 4 END    */
-
-
-
