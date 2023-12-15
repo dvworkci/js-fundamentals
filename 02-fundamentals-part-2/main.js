@@ -1,5 +1,5 @@
 /******** ACTIVATING STRICT MODE **/
-'use strict';
+"use strict";
 //
 // let hasDriversLicense = false;
 // const passTest = true;
@@ -209,13 +209,185 @@
 /************** ARRAY CHALLENGE END **/
 
 /************** OBJECTS IN JAVASCRIPT **/
-const dushyant = {
-  firstName:'Dushyant',
-  lastName:'Vishwakarma',
-  age:2023 - 1997,
-  job:'Developer',
-    friends:['Rajesh','Nishchay','John']
-};
+// const dushyant = {
+//   firstName:'Dushyant',
+//   lastName:'Vishwakarma',
+//   age:2023 - 1997,
+//   job:'Developer',
+//     friends:['Rajesh','Nishchay','John']
+// };
 
-console.log(dushyant);
+// console.log(dushyant);
 /************** OBJECTS IN JAVASCRIPT END **/
+
+/************** DOT vs BRACKET NOTATION **/
+
+// const dushyant = {
+//   firstName: "Dushyant",
+//   lastName: "Vishwakarma",
+//   age: 2023 - 1997,
+//   job: "Developer",
+//   friends: ["Rajesh", "Nishchay", "John"],
+// };
+//
+// console.log(dushyant.firstName);
+// console.log(dushyant["lastName"]);
+//
+// const nameKey = "Name";
+// console.log(dushyant["first" + nameKey]);
+// console.log(dushyant["last" + nameKey]);
+//
+// const query = prompt("What do you want to know about Dushyant?");
+// console.log(query);
+//
+// if (!dushyant[query]) {
+//   alert("Does not exists.");
+// } else {
+//   console.log(dushyant[query]);
+//   alert(dushyant[query]);
+// }
+//
+// dushyant.location = 'Indore';
+// dushyant["twitter"] = '@cooldv235';
+
+/************** DOT vs BRACKET NOTATION END **/
+
+/************** OBJECT METHODS **/
+// const dushyant = {
+//   firstName: "Dushyant",
+//   lastName: "Vishwakarma",
+//   birthYear: 1997,
+//   job: "Developer",
+//   friends: ["Rajesh", "Nishchay", "John"],
+//   hasDriversLicense:false,
+//   // calcAge : function (birthYear) {
+//   //   return 2023 - birthYear;
+//   // } // method
+//
+//   // calcAge : function () {
+//   //   return 2023 - this.birthYear;
+//   // } // method
+//
+//   calcAge : function () {
+//     this.age =  2023 - this.birthYear;
+//     return this.age;
+//   }, // method
+//
+//   getSummary: function () {
+//     return `${this.firstName} is a ${this.calcAge()} years old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;
+//   }
+//
+// };
+//
+// console.log(dushyant.calcAge());
+// console.log(dushyant.getSummary());
+// console.log(dushyant.age);
+// console.log(dushyant['calcAge']());
+
+
+/************** OBJECT METHODS END  **/
+
+/************** OBJECT CHALLENGE   **/
+//
+// const mark = {
+//   fullName:"Mark Miller",
+//   mass:78,
+//   height:1.69,
+//   calcBMI:function () {
+//     this.bmi = this.mass / (this.height * this.height);
+//     return this.bmi;
+//   }
+// };
+//
+// const john = {
+//   fullName:"John Smith",
+//   mass:92,
+//   height:1.95,
+//   calcBMI:function () {
+//     this.bmi = this.mass / (this.height * this.height);
+//     return this.bmi;
+//   }
+// };
+//
+// const JohnBmi = john.calcBMI();
+// const markBmi = mark.calcBMI();
+//
+// if(john.bmi > mark.bmi){
+//   console.log(`${john.fullName}'s BMI (${john.bmi.toFixed(2)}) is higher than ${mark.fullName}'s (${mark.bmi.toFixed(2)})!`);
+// } else if(mark.bmi > john.bmi){
+//   console.log(`${mark.fullName}'s BMI (${mark.bmi.toFixed(2)}) is higher than ${john.fullName}'s BMI (${john.bmi.toFixed(2)})!`);
+// } else {
+//   console.log(`Both have equal BMI.`);
+// }
+
+/************** OBJECT CHALLENGE END   **/
+
+/************** ITERATION FOR LOOP   **/
+
+// for (let i = 1; i <= 10; i++){
+//   console.log(`Lifting weights repetition ${i}`);
+// }
+
+/************** ITERATION FOR LOOP END   **/
+
+/************** LOOPING ARRAYS, BREAK AND CONTINUE  **/
+// const john = ['John Doe', 27, 'Developer', ['Mike', 'Saul', 'Walter'], true];
+// const types = [];
+//
+// for(let i = 0; i < john.length;i++){
+//     // console.log(john[i],typeof  john[i]);
+//     // types[i] = typeof john[i];
+//     types.push(typeof john[i]);
+// }
+// // console.log(types);
+//
+// const years = [1991,1992,1993,1995,1997];
+// const ages = [];
+//
+// for(let i = 0; i < years.length; i++){
+//     ages.push(2023 - years[i]);
+// }
+//
+// // console.log(ages);
+//
+// // continue & break;
+// console.log('--ONLY STRINGS--');
+// for(let i = 0; i < john.length; i++){
+//     if(typeof john[i] !== 'string') continue;
+//     console.log(john[i],typeof  john[i]);
+// }
+/************** LOOPING ARRAYS, BREAK AND CONTINUE END
+ **/
+/************** LOOPING BACKWARDS AND LOOPS IN LOOPS  **/
+
+// const john = ['John Doe', 27, 'Developer', ['Mike', 'Saul', 'Walter'], true];
+//
+// for(let i = john.length - 1; i >= 0; i--){
+//     console.log(john[i],typeof john[i]);
+// }
+//
+// // loops in loops
+// for (let i = 1; i <= 4;i++){
+//     console.log(`--------- STARTING EXERCISE ${i} -------------`);
+//
+//     for(let j = 1;j <= 6;j++){
+//         console.log(`Lifting rep ${j}`);
+//     }
+// }
+
+/************** LOOPING BACKWARDS AND LOOPS IN LOOPS END  **/
+
+/************** WHILE LOOP  **/
+let rep = 1;
+while(rep <= 10){
+    // console.log(`Lifting rep ${rep}`);
+    rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while(dice !== 6){
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+}
+/************** WHILE LOOP END  **/
